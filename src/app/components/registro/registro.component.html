@@ -1,0 +1,46 @@
+
+<body>
+  <div class="container">
+    <form class="formulario" (submit)="submitUser()">
+      <h1>REGISTRATE</h1>
+      <div class="contenedor">
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" placeholder="Nombre"  name="name" [(ngModel)]="user.name" >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" placeholder="Apellido" name="lastName" [(ngModel)]="user.lastName" >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-address-card icon"></i>
+          <input type="text" placeholder="Dni" name="dni" [(ngModel)]="user.dni"  >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-birthday-cake icon"></i>
+          <input type="date" placeholder="Fecha de nacimiento" name="date" [(ngModel)]="user.date"  >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-phone icon"></i>
+          <input type="text" name="phone" [(ngModel)]="user.phone"  placeholder="Telefono" >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-map-marked-alt icon"></i>
+          <input type="text" name="diretion" [(ngModel)]="user.diretion"  placeholder="Dirección" >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-user icon"></i>
+          <input type="text" name="user" [(ngModel)]="user.user"  placeholder="Usuario" >
+        </div>
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password"  name="password" [(ngModel)]="user.password"  placeholder="Contraseña" >
+        </div>
+        <input type="submit" value="REGISTRATE" class="button"> 
+      </div>
+     
+      <p>¿Ya tienes cuenta?<a class="link"  (click)="btnClick()">Iniciar sesión</a></p>
+  
+    </form>
+  </div>
+  </body>

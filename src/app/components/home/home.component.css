@@ -1,0 +1,32 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+   
+} 
+
+ /* .fondo{
+    background: url('../../../assets/img/fondo.png') #ccc no-repeat;
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+
+}  */
+ .cuadro{
+    background: rgb(255, 255, 255);
+    width: 500px;
+    height: 200px;
+    margin: 2rem auto;
+    text-align: center;
+    
+}
+.cuadro p {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    display: table-cell;
+
+} 

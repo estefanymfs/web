@@ -1,0 +1,33 @@
+<div class="container">
+<div class="planSelection">
+  <div>
+    <h2 class="title-gray text-center"><strong>Pago de producto</strong></h2>
+    <form class="form"  [formGroup]="cardFG" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">CardNumber</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter CardNumber" formControlName="cardNumber">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Mes de Exp</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Mes de Exp" formControlName="expMonth">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Año de Exp</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Año de Exp" formControlName="expYear">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">CVV</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter CVV" formControlName="cvv">
+      </div>
+      
+      <button class="btn btn-primary" [disabled]="!cardFG.valid" type="submit" >
+        pagar
+      </button>
+    </form>
+  </div>
+</div>
+</div>
